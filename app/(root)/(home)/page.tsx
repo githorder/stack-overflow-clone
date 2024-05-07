@@ -1,5 +1,9 @@
-function HomePage() {
-  return <div>Home</div>;
-}
+import { UserButton } from "@clerk/nextjs";
 
-export default HomePage;
+export default function HomePage() {
+  return (
+    <div>
+      <UserButton />
+    </div>
+  );
+}
