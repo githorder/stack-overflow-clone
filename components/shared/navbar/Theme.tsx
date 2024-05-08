@@ -27,6 +27,7 @@ export default function Theme() {
               width={20}
               height={20}
               className="active-theme"
+              priority
             />
           ) : (
             <Image
@@ -35,6 +36,7 @@ export default function Theme() {
               width={20}
               height={20}
               className="active-theme"
+              priority
             />
           )}
         </MenubarTrigger>
@@ -59,6 +61,7 @@ export default function Theme() {
                 height={16}
                 alt={item.value}
                 className={`${mode === item.value && "active-theme"}`}
+                priority
               />
 
               <p

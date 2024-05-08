@@ -42,6 +42,7 @@ const NavContent = () => {
                 height={20}
                 src={item.imgURL}
                 className={`${isActive ? "" : "invert-colors"}`}
+                priority
               />
               <p className={`${isActive ? "base-bold" : "base-medium"}`}>
                 {item.label}
@@ -64,6 +65,7 @@ export default function MobileNav() {
           height={36}
           alt="Menu"
           className="invert-colors sm:hidden"
+          priority
         />
       </SheetTrigger>
       <SheetContent
@@ -76,6 +78,7 @@ export default function MobileNav() {
             width={23}
             height={23}
             alt="Devflow"
+            priority
           />{" "}
           <p className="h2-bold text-dark100_light900 font-spaceGrotesk">
             Dev <span className="text-primary-500">Overflow</span>
