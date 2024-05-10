@@ -97,6 +97,21 @@ body {
   border-radius: 50px;
 }
 
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 50px;
+}
+
 .custom-scrollbar::-webkit-scrollbar-thumb:hover {
   background: #555;
 }

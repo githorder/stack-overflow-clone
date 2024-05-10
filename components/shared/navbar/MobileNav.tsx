@@ -20,7 +20,7 @@ const NavContent = () => {
   const path = usePathname();
 
   return (
-    <section className="flex h-full flex-col gap-6 pt-16">
+    <section className="flex h-full flex-col gap-6 py-16">
       {sidebarLinks.map((item) => {
         const isActive =
           (path.includes(item.route) && item.route.length > 1) ||
@@ -70,7 +70,7 @@ export default function MobileNav() {
       </SheetTrigger>
       <SheetContent
         side="left"
-        className="background-light900_dark200 border-none flex flex-col"
+        className="background-light900_dark200 border-none flex flex-col overflow-y-scroll no-scrollbar"
       >
         <Link href="/" className="flex items-center gap-1">
           <Image
@@ -85,7 +85,7 @@ export default function MobileNav() {
           </p>
         </Link>
 
-        <div className="flex flex-col flex-auto ">
+        <div className="flex flex-col flex-auto">
           <SheetClose asChild>
             <NavContent />
           </SheetClose>
@@ -94,7 +94,10 @@ export default function MobileNav() {
             <div className="flex flex-col gap-3">
               <SheetClose asChild>
                 <Link href="/sign-in">
-                  <Button className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-dark400_light900">
+                  <Button
+                    size="lg"
+                    className="small-medium btn-secondary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-dark400_light900"
+                  >
                     <span className="primary-text-gradient">Log In</span>
                   </Button>
                 </Link>
@@ -102,7 +105,10 @@ export default function MobileNav() {
 
               <SheetClose asChild>
                 <Link href="/sign-up">
-                  <Button className="small-medium btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-dark400_light900">
+                  <Button
+                    size="lg"
+                    className="small-medium btn-tertiary min-h-[41px] w-full rounded-lg px-4 py-3 shadow-none text-dark400_light900"
+                  >
                     Sign Up
                   </Button>
                 </Link>
