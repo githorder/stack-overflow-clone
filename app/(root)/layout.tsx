@@ -14,7 +14,6 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
         </section>
         RightSidebar
       </div>
-      Toaster
     </main>
   );
 }
