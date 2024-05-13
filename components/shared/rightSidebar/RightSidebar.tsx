@@ -2,58 +2,7 @@ import Image from "next/image";
 
 import Tag from "../tag/Tag";
 
-const networks = [
-  {
-    text: "Would it be appropriate to point out an error in another paper during a referee report?",
-  },
-  {
-    text: "How can an airconditioning machine exist?",
-  },
-  {
-    text: "Interrogated every time crossing UK Border as citizen",
-  },
-  {
-    text: "Low digit addition generator",
-  },
-  {
-    text: "What is an example of 3 numbers that do not make up a vector?",
-  },
-];
-
-const tags = [
-  {
-    text: "Javascript",
-    value: "20152+",
-  },
-  {
-    text: "Next.js",
-    value: "18493+",
-  },
-  {
-    text: "React.js",
-    value: "16269+",
-  },
-  {
-    text: "Node.js",
-    value: "15121+",
-  },
-  {
-    text: "Python",
-    value: "14431+",
-  },
-  {
-    text: "Microsoft Azure",
-    value: "9429+",
-  },
-  {
-    text: "PostgreSql",
-    value: "9429+",
-  },
-  {
-    text: "Machine Learning",
-    value: "9429+",
-  },
-];
+import { networks, tags } from "@/constants";
 
 export default function RightSidebar() {
   return (
