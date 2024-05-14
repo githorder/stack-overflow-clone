@@ -180,7 +180,7 @@
   }
 
   .placeholder {
-    @apply placeholder:text-light-400 dark:placeholder:text-light-500;
+    @apply placeholder:text-light-400 dark:placeholder:text-light-500 text-base font-normal;
   }
 
   .invert-colors {

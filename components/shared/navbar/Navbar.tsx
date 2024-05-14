@@ -5,7 +5,7 @@ import { SignedIn, UserButton } from "@clerk/nextjs";
 
 import Theme from "./Theme";
 import MobileNav from "./MobileNav";
-import GlobalSearch from "../search/GlobalSearch";
+import Search from "../search/Search";
 
 export default function Navbar() {
   return (
@@ -22,7 +22,12 @@ export default function Navbar() {
           Dev <span className="text-primary-500">Overflow</span>
         </p>
       </Link>
-      <GlobalSearch />
+      <Search
+        placeholder="Search anything globally..."
+        iconAlt="seach icon"
+        iconSrc="/assets/icons/search.svg"
+        className="max-w-[600px] max-lg:hidden"
+      />
       <div className="flex-between gap-5">
         <Theme />
         <SignedIn>
