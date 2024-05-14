@@ -1,6 +1,9 @@
+import Link from "next/link";
+
 import Search from "@/components/shared/search/Search";
 import { Button } from "@/components/ui/button";
-import Link from "next/link";
+import HomeFilters from "@/components/home/HomeFilters";
+import MobileFilter from "@/components/shared/filter/MobileFilter";
 
 export default function HomePage() {
   return (
@@ -15,12 +18,19 @@ export default function HomePage() {
         </Link>
       </div>
 
-      <div className="max-sm:mt-0 mt-11 flex justify-between gap-5 max-sm:flex-col sm:items-center">
+      <div className="max-sm:mt-0 max-sm:items-start max-sm:gap-5 mt-11 flex flex-col justify-between gap-10 max-sm:flex-col items-start max-md:flex-row max-md:items-center">
         <Search
-          placeholder="Search for Questions Here..."
+          placeholder="Search questions..."
           iconAlt="seach icon"
           iconSrc="/assets/icons/search.svg"
           iconPosition="left"
+          className="grow"
+        />
+        <HomeFilters />
+        <MobileFilter
+          otherClasses="min-h-[45px] sm:min-w-[170px]"
+          containerClasses="hidden max-md:flex"
+          placeholder="Select a Filter"
         />
       </div>
     </>

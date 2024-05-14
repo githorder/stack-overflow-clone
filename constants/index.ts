@@ -137,3 +137,10 @@ export const tags = [
     value: "9429+",
   },
 ];
+
+export const filters = [
+  { name: "Newest" },
+  { name: "Recommended" },
+  { name: "Frequent" },
+  { name: "Unanswered" },
+];
