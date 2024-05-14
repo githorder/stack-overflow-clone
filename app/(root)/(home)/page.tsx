@@ -20,7 +20,7 @@ export default function HomePage() {
           placeholder="Search for Questions Here..."
           iconAlt="seach icon"
           iconSrc="/assets/icons/search.svg"
-          className=""
+          iconPosition="left"
         />
       </div>
     </>

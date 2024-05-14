@@ -27,6 +27,7 @@ export default function Navbar() {
         iconAlt="seach icon"
         iconSrc="/assets/icons/search.svg"
         className="max-w-[600px] max-lg:hidden"
+        iconPosition="left"
       />
       <div className="flex-between gap-5">
         <Theme />
