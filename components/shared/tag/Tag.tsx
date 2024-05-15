@@ -6,8 +6,8 @@ import { Badge } from "@/components/ui/badge";
 interface Props {
   name: string;
   showCount?: boolean;
-  _id: number;
-  totalVal: string;
+  _id: string;
+  totalVal?: string;
 }
 
 export default function Tag({ name, totalVal, showCount, _id }: Props) {
