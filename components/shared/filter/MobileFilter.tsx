@@ -1,6 +1,6 @@
 "use client";
 
-import { filters } from "@/constants";
+import { HomePageFilters as filters } from "@/constants/filters";
 
 import {
   Select,
@@ -37,8 +37,8 @@ export default function MobileFilter({
             {filters.map((f) => (
               <SelectItem
                 className="cursor-pointer hover:background-light800_dark400"
-                key={f.name}
-                value={f.name.toLocaleLowerCase()}
+                key={f.value}
+                value={f.value}
               >
                 {f.name}
               </SelectItem>

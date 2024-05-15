@@ -28,7 +28,7 @@ export default function HomePage() {
         />
         <HomeFilters />
         <MobileFilter
-          otherClasses="min-h-[45px] sm:min-w-[170px]"
+          otherClasses="min-h-[45px] min-w-[170px]"
           containerClasses="hidden max-md:flex"
           placeholder="Select a Filter"
         />
